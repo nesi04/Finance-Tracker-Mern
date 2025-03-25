@@ -8,7 +8,7 @@ const RecentIncome = ({transactions,onSeeMore}) => {
    <div className="card">
     <div className="flex items-center justify-between">
         <h5 className="text-lg">Income</h5>
-        <button className="card-btn">See more <LuArrowRight className='text-base'></LuArrowRight></button>
+        <button className="card-btn" onClick={onSeeMore}>See more <LuArrowRight className='text-base'></LuArrowRight></button>
     </div>
     <div className="mt-6">
         {transactions?.slice(0,5)?.map((item)=>(
